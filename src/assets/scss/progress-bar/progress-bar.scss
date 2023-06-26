@@ -1,0 +1,12 @@
+.progress {
+  margin: 6px 0;
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: $color-bg-secondary;
+
+  &__line {
+    background-color: $color-green;
+    height: 100%;
+  }
+}

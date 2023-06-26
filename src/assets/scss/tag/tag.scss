@@ -1,0 +1,18 @@
+.tag {
+  padding: 0 24px;
+
+  &__items {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__item {
+    font-size: 12px;
+    padding: 3px 6px;
+    border-radius: 3px;
+    background-color: $color-green;
+    cursor: pointer;
+  }
+}

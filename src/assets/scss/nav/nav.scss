@@ -1,0 +1,54 @@
+.nav {
+  margin-top: 48px;
+
+  &__link {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    color: $color-light-green;
+    padding: 16px 0;
+    margin: 2px 0;
+
+    .icon {
+      fill: $color-light-green;
+    }
+
+    &.is-active,
+    &:hover {
+      color: $color-green;
+      transition: 0.2s;
+
+      &::after {
+        content: "";
+        width: 8px;
+        height: 100%;
+        background-color: $color-green;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+        position: absolute;
+        right: -24px;
+        top: 0;
+      }
+
+      .icon {
+        fill: $color-green;
+      }
+    }
+  }
+
+  .icon {
+    margin-right: 12px;
+  }
+
+  &__subnav {
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__subnav-link {
+    font-size: 12px;
+    color: $color-green;
+  }
+}

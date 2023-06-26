@@ -1,0 +1,42 @@
+.dropdown {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: inline-block;
+
+  &.is-open &__menu {
+    display: block;
+  }
+
+  &__btn {
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+      .icon {
+        fill: $color-green;
+      }
+    }
+  }
+
+  &__menu {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    border-radius: 6px;
+    background-color: $color-green;
+  }
+
+  &__menu-item {
+    color: $color-white;
+    font-size: 13px;
+    padding: 6px 12px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.164);
+    }
+  }
+}

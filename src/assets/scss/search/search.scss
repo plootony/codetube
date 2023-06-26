@@ -1,0 +1,33 @@
+.search {
+  background-color: $color-bg-primary;
+  height: 46px;
+  width: 275px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 64px;
+
+  &__input {
+    padding: 0 24px;
+    color: $color-green;
+
+    &::placeholder {
+      color: $color-light-green;
+    }
+  }
+
+  &__btn {
+    width: 48px;
+    height: 100%;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+      transition: transform 0.2s;
+    }
+
+    .icon {
+      fill: $color-green;
+    }
+  }
+}
