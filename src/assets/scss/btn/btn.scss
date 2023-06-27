@@ -1,11 +1,11 @@
-.stared-btn {
+.favor-btn {
   position: absolute;
   right: 50px;
   top: 20px;
   cursor: pointer;
 
   &:hover .icon,
-  &.is-stared .icon {
+  &.is-favor .icon {
     fill: $color-orange;
   }
 }

@@ -1,7 +1,7 @@
 <template>
     <nav>
         <ul class="nav">
-            <li v-for="link in links">
+            <li v-for="link in links" :key="link.id">
                 <router-link class="nav__link" :to="{ name: `${link.route}` }">
                     <svg class="icon">
                         <use :xlink:href="`${iconPath}${link.icon}`"></use>
