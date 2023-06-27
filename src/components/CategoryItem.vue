@@ -1,15 +1,6 @@
 <template>
     <div class="category__item">
-        <div class="dropdown">
-            <button class="dropdown__btn"> <svg class="icon">
-                    <use xlink:href="@/assets/icons/sprite.svg#ellipsis-h"></use>
-                </svg></button>
-            <ul class="dropdown__menu">
-                <li class="dropdown__item">Удалить</li>
-                <li class="dropdown__item">Редактировать</li>
-                <li class="dropdown__item">Архивировать</li>
-            </ul>
-        </div>
+        <Dropdown />
         <button class="stared-btn is-stared"><svg class="icon">
                 <use xlink:href="/src/assets/icons/sprite.svg#star"></use>
             </svg></button>
@@ -28,7 +19,10 @@
 </template>
 
 <script>
+import Dropdown from './Dropdown.vue';
+
 export default {
-    name: 'CategoryItem'
+    name: "CategoryItem",
+    components: { Dropdown }
 }
 </script>
