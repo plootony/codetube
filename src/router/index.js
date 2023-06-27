@@ -1,21 +1,39 @@
-// import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 
-// // const router = createRouter({
-// //   history: createWebHistory(import.meta.env.BASE_URL),
-// //   // routes: [
-// //   //   {
-// //   //     path: "/",
-// //   //     name: "home",
-// //   //   },
-// //   //   // {
-// //   //   //   path: '/about',
-// //   //   //   name: 'about',
-// //   //   //   // route level code-splitting
-// //   //   //   // this generates a separate chunk (About.[hash].js) for this route
-// //   //   //   // which is lazy-loaded when the route is visited.
-// //   //   //   component: () => import('../views/AboutView.vue')
-// //   //   // }
-// //   // ],
-// // });
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: [
+    {
+      path: "/",
+      name: "all",
+      component: () => import("../views/All.vue"),
+    },
+    {
+      path: "/done",
+      name: "done",
+      component: () => import("../views/Done.vue"),
+    },
+    {
+      path: "/favor",
+      name: "favor",
+      component: () => import("../views/Favor.vue"),
+    },
+    {
+      path: "/deleted",
+      name: "deleted",
+      component: () => import("../views/Deleted.vue"),
+    },
+    {
+      path: "/settings",
+      name: "settings",
+      component: () => import("../views/Settings.vue"),
+    },
+    {
+      path: "/help",
+      name: "help",
+      component: () => import("../views/Help.vue"),
+    },
+  ],
+});
 
-// // export default router;
+export default router;
