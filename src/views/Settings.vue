@@ -1,6 +1,6 @@
 <template>
     <div class="router-temp">
-        Help
+        Settings
     </div>
 </template>
 

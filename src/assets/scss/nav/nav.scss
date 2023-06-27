@@ -12,8 +12,7 @@
     .icon {
       fill: $color-light-green;
     }
-
-    &.is-active,
+    &.router-link-active,
     &:hover {
       color: $color-green;
       transition: 0.2s;

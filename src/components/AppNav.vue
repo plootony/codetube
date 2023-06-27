@@ -1,52 +1,12 @@
 <template>
     <nav>
         <ul class="nav">
-            <li>
-                <router-link class="nav__link is-active" :to="{ name: 'all' }">
+            <li v-for="link in links">
+                <router-link class="nav__link" :to="{ name: `${link.route}` }">
                     <svg class="icon">
-                        <use xlink:href="@/assets/icons/sprite.svg#folder-open"></use>
+                        <use :xlink:href="`${iconPath}${link.icon}`"></use>
                     </svg>
-                    Все курсы
-                </router-link>
-            </li>
-            <li>
-                <router-link class="nav__link" :to="{ name: 'done' }">
-                    <svg class="icon">
-                        <use xlink:href="@/assets/icons/sprite.svg#calendar-alt"></use>
-                    </svg>
-                    Завершенные
-                </router-link>
-            </li>
-            <li>
-                <router-link class="nav__link" :to="{ name: 'favor' }">
-                    <svg class="icon">
-                        <use xlink:href="@/assets/icons/sprite.svg#star"></use>
-                    </svg>
-                    Избранное
-                </router-link>
-            </li>
-            <li>
-                <router-link class="nav__link" :to="{ name: 'deleted' }">
-                    <svg class="icon">
-                        <use xlink:href="@/assets/icons/sprite.svg#trash"></use>
-                    </svg>
-                    Удаленные
-                </router-link>
-            </li>
-            <li>
-                <router-link class="nav__link" :to="{ name: 'settings' }">
-                    <svg class="icon">
-                        <use xlink:href="@/assets/icons/sprite.svg#cog"></use>
-                    </svg>
-                    Настройки
-                </router-link>
-            </li>
-            <li>
-                <router-link class="nav__link" :to="{ name: 'help' }">
-                    <svg class="icon">
-                        <use xlink:href="@/assets/icons/sprite.svg#question-circle"></use>
-                    </svg>
-                    Помощь
+                    {{ link.title }}
                 </router-link>
             </li>
         </ul>
@@ -55,7 +15,50 @@
 
 <script>
 export default {
-    name: "Nav"
+    name: "Nav",
+    data() {
+        return {
+            iconPath: 'src/assets/icons/sprite.svg#',
+            links: [
+                {
+                    id: 1,
+                    title: 'Все курсы',
+                    icon: 'folder-open',
+                    route: 'home'
+                },
+                {
+                    id: 2,
+                    title: 'Завершенные',
+                    icon: 'calendar-alt',
+                    route: 'done'
+                },
+                {
+                    id: 3,
+                    title: 'Избранное',
+                    icon: 'star',
+                    route: 'favor'
+                },
+                {
+                    id: 4,
+                    title: 'Удаленные',
+                    icon: 'trash',
+                    route: 'deleted'
+                },
+                {
+                    id: 5,
+                    title: 'Настройки',
+                    icon: 'cog',
+                    route: 'settings'
+                },
+                {
+                    id: 6,
+                    title: 'Помошь',
+                    icon: 'question-circle',
+                    route: 'help'
+                }
+            ]
+        }
+    }
 }
 
 </script>
