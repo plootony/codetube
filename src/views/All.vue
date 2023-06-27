@@ -1,7 +1,6 @@
 <template>
     <AppHeader />
     <CategoryItems />
-    Это Ебаный All
 </template>
 
 <script>
