@@ -1,0 +1,268 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "title": "Программирование",
+      "cards": [
+        {
+          "id": 1,
+          "title": "Курс по Vue 3",
+          "image": "folder",
+          "time": 300,
+          "note": 22,
+          "favor": true,
+          "percent": 11,
+          "tags": [1, 2, 3]
+        },
+        {
+          "id": 2,
+          "title": "Курс по Vue 2",
+          "image": "folder",
+          "time": 200,
+          "note": 223,
+          "favor": false,
+          "percent": 13,
+          "tags": [1, 2, 3]
+        },
+        {
+          "id": 3,
+          "title": "Курс по JavaScript",
+          "image": "folder",
+          "time": 200,
+          "note": 223,
+          "favor": false,
+          "percent": 87,
+          "tags": [1, 2, 3]
+        },
+        {
+          "id": 4,
+          "title": "Курс по Java",
+          "image": "folder",
+          "time": 200,
+          "note": 223,
+          "favor": false,
+          "percent": 87,
+          "tags": [1, 2, 3]
+        },
+        {
+          "id": 5,
+          "title": "Курс по ООП",
+          "image": "folder",
+          "time": 200,
+          "note": 223,
+          "favor": false,
+          "percent": 87,
+          "tags": [1, 2, 3]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Английский язык",
+      "cards": [
+        {
+          "id": 1,
+          "title": "Английский для чайников",
+          "image": "folder",
+          "time": 200,
+          "note": 11,
+          "favor": true,
+          "percent": 33,
+          "tags": [1, 2, 3]
+        },
+        {
+          "id": 2,
+          "title": "English for Beginner",
+          "image": "folder",
+          "time": 100,
+          "note": 1,
+          "favor": true,
+          "percent": 21,
+          "tags": [1, 2, 3]
+        },
+        {
+          "id": 3,
+          "title": "Разговорный английский",
+          "image": "folder",
+          "time": 200,
+          "note": 223,
+          "favor": false,
+          "percent": 13,
+          "tags": [1, 2, 3]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Дизайн",
+      "cards": [
+        {
+          "id": 1,
+          "title": "Курс по графическому дизайну",
+          "image": "folder",
+          "time": 150,
+          "note": 10,
+          "favor": true,
+          "percent": 45,
+          "tags": [1, 2, 3]
+        },
+        {
+          "id": 2,
+          "title": "UI/UX дизайн",
+          "image": "folder",
+          "time": 250,
+          "note": 5,
+          "favor": false,
+          "percent": 60,
+          "tags": [1, 2, 3]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Музыка",
+      "cards": [
+        {
+          "id": 1,
+          "title": "Курс игры на гитаре",
+          "image": "folder",
+          "time": 180,
+          "note": 15,
+          "favor": true,
+          "percent": 75,
+          "tags": [1, 2, 3]
+        },
+        {
+          "id": 2,
+          "title": "Уроки по пения",
+          "image": "folder",
+          "time": 120,
+          "note": 8,
+          "favor": false,
+          "percent": 40,
+          "tags": [1, 2, 3]
+        },
+        {
+          "id": 3,
+          "title": "Курс по музыкальной теории",
+          "image": "folder",
+          "time": 300,
+          "note": 20,
+          "favor": true,
+          "percent": 90,
+          "tags": [1, 2, 3]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Фотография",
+      "cards": [
+        {
+          "id": 1,
+          "title": "Основы фотографии",
+          "image": "folder",
+          "time": 120,
+          "note": 7,
+          "favor": false,
+          "percent": 30,
+          "tags": [1, 2, 3]
+        },
+        {
+          "id": 2,
+          "title": "Пейзажная фотография",
+          "image": "folder",
+          "time": 180,
+          "note": 12,
+          "favor": true,
+          "percent": 60,
+          "tags": [1, 2, 3]
+        },
+        {
+          "id": 3,
+          "title": "Ретушь и постобработка",
+          "image": "folder",
+          "time": 240,
+          "note": 18,
+          "favor": false,
+          "percent": 75,
+          "tags": [1, 2, 3]
+        }
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "Программирование"
+    },
+    {
+      "id": 2,
+      "name": "JavaScript"
+    },
+    {
+      "id": 3,
+      "name": "Vue 3"
+    },
+    {
+      "id": 4,
+      "name": "Vue 2"
+    },
+    {
+      "id": 5,
+      "name": "Английский"
+    },
+    {
+      "id": 6,
+      "name": "Онлайн книги"
+    },
+    {
+      "id": 7,
+      "name": "English"
+    },
+    {
+      "id": 8,
+      "name": "Дизайн"
+    },
+    {
+      "id": 9,
+      "name": "Графический дизайн"
+    },
+    {
+      "id": 10,
+      "name": "UI/UX"
+    },
+    {
+      "id": 11,
+      "name": "Музыка"
+    },
+    {
+      "id": 12,
+      "name": "Гитара"
+    },
+    {
+      "id": 13,
+      "name": "Пение"
+    },
+    {
+      "id": 14,
+      "name": "Музыкальная теория"
+    },
+    {
+      "id": 15,
+      "name": "Фотография"
+    },
+    {
+      "id": 16,
+      "name": "Основы"
+    },
+    {
+      "id": 17,
+      "name": "Пейзаж"
+    },
+    {
+      "id": 18,
+      "name": "Ретушь"
+    }
+  ]
+}

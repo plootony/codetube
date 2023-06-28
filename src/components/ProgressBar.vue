@@ -12,7 +12,6 @@ export default {
         percent: {
             type: Number,
             required: false,
-            default: () => ({})
         }
     },
     computed: {
@@ -26,6 +25,3 @@ export default {
     }
 }
 </script>
-
-
-<!-- Запрос на получение всех карточек, каждая карточка получает свой набор, в этом наборе есть прогресс -->

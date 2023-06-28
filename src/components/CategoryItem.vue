@@ -9,16 +9,16 @@
         </button>
 
         <div class="category__item-img">
-            <img src="@/assets/image/folder.svg" alt="">
+            <img :src="`${cardImagePath}${card.image}.svg`" :alt="`${card.image}`">
         </div>
 
-        <h3 class="category__item-title">Курс по Vue 3</h3>
+        <h3 class="category__item-title">{{ card.title }}</h3>
 
-        <ProgressBar :percent="percent" />
+        <ProgressBar :percent="card.percent" />
 
         <div class="category__item-footer">
-            <b class="category__item-time">2ч 20м</b>
-            <span class="category__item-notes">23 заметки</span>
+            <b class="category__item-time">{{ card.time }} мин</b>
+            <span class="category__item-notes">{{ card.note }} заметки</span>
         </div>
     </div>
 </template>
@@ -33,10 +33,16 @@ export default {
         Dropdown,
         ProgressBar
     },
+    props: {
+        card: {
+            type: Object,
+            required: true
+        }
+    },
     data() {
         return {
             isFavor: false,
-            percent: 34
+            cardImagePath: 'src/assets/image/'
         }
     },
     methods: {
@@ -44,6 +50,5 @@ export default {
             this.isFavor = !this.isFavor
         }
     }
-
 }
 </script>

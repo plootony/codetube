@@ -5,8 +5,8 @@
 </template>
 
 <script>
-import AppHeader from '../components/AppHeader.vue'
-import CategoryItems from '../components/CategoryItems.vue';
+import AppHeader from '@/components/AppHeader.vue'
+import CategoryItems from '@/components/CategoryItems.vue';
 
 export default {
     name: 'Done',

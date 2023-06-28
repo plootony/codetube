@@ -4,6 +4,7 @@
   &__items {
     margin: 12px 0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 12px;
   }
