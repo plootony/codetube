@@ -1,0 +1,88 @@
+.auth {
+  background-color: $color-bg-primary;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+
+  &__body {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    text-align: center;
+    color: $color-light-green;
+  }
+
+  &__subtitle {
+    text-align: center;
+    margin-top: 12px;
+    color: $color-light-green;
+  }
+
+  &__form {
+    border: 1px solid $color-green;
+    margin-top: 24px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: $color-bg-primary;
+    border-radius: 8px;
+    flex-grow: 1;
+    margin-bottom: 24px;
+  }
+
+  &__label {
+    display: none;
+  }
+
+  &__form-group {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      padding: 14px 24px;
+      border: 1px solid transparent;
+      background-color: $color-green;
+      border-radius: 4px;
+
+      &::placeholder {
+        color: $color-light-green;
+      }
+
+      &:focus {
+        background-color: $color-bg-primary;
+        color: $color-light-green;
+        border: 1px solid $color-green;
+      }
+    }
+  }
+
+  &__submit {
+    border: 1px solid $color-green;
+    color: $color-green;
+    padding: 17px 24px;
+    cursor: pointer;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: $color-green;
+      border: 1px solid $color-light-green;
+      color: $color-light-green;
+    }
+  }
+
+  &__link {
+    color: $color-light-green;
+    text-align: center;
+    font-size: 12px;
+
+    &:hover {
+      color: $color-green;
+    }
+  }
+}

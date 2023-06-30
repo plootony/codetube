@@ -1,13 +1,25 @@
 <template>
     <nav>
         <ul class="nav">
-            <li v-for="link in links" :key="link.id">
-                <router-link class="nav__link" :to="{ name: `${link.route}` }">
+            <li v-for="navLink in navLinks" :key="navLink.id">
+                <router-link class="nav__link" :to="{ name: `${navLink.route}` }">
                     <svg class="icon">
-                        <use :xlink:href="`${iconPath}${link.icon}`"></use>
+                        <use :xlink:href="`${iconPath}${navLink.icon}`"></use>
                     </svg>
-                    {{ link.title }}
+                    {{ navLink.title }}
                 </router-link>
+            </li>
+        </ul>
+        <ul class="nav nav--auth">
+            <li>
+            <li v-for="authLink in authLinks" :key="authLink.id">
+                <router-link class="nav__link" :to="{ name: `${authLink.route}` }">
+                    <svg class="icon">
+                        <use :xlink:href="`${iconPath}${authLink.icon}`"></use>
+                    </svg>
+                    {{ authLink.title }}
+                </router-link>
+            </li>
             </li>
         </ul>
     </nav>
@@ -19,7 +31,7 @@ export default {
     data() {
         return {
             iconPath: 'src/assets/icons/sprite.svg#',
-            links: [
+            navLinks: [
                 {
                     id: 1,
                     title: 'Все курсы',
@@ -55,6 +67,20 @@ export default {
                     title: 'Помошь',
                     icon: 'question-circle',
                     route: 'help'
+                }
+            ],
+            authLinks: [
+                {
+                    id: 1,
+                    title: 'Войти',
+                    icon: 'folder-open',
+                    route: 'login'
+                },
+                {
+                    id: 2,
+                    title: 'Регистрация',
+                    icon: 'calendar-alt',
+                    route: 'register'
                 }
             ]
         }

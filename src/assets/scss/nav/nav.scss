@@ -1,5 +1,6 @@
 .nav {
   margin-top: 48px;
+  height: 100%;
 
   &__link {
     position: relative;
@@ -49,5 +50,14 @@
   &__subnav-link {
     font-size: 12px;
     color: $color-green;
+  }
+
+  &--auth {
+    height: auto;
+    margin-top: auto;
+
+    .nav__link::after {
+      display: none;
+    }
   }
 }

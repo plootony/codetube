@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "all": "concurrently \"npm run dev\" \"npm run json-server\"",
+    "all": "concurrently \"npm run dev\" \"npm run json-server\" \"npm run json-server-auth\"",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "json-server": "json-server --watch db.json --port 5000"
+    "json-server": "json-server --watch db.json --port 5000",
+    "json-server-auth": "json-server-auth --watch db.json --port 5000"
   },
   "dependencies": {
     "axios": "^1.4.0",
@@ -17,6 +18,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
     "concurrently": "^8.2.0",
+    "json-server-auth": "^2.1.0",
     "sass": "^1.63.6",
     "sass-loader": "^13.3.2",
     "vite": "^4.3.5"

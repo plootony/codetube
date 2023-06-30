@@ -55,15 +55,9 @@ button {
   border-radius: 24px;
 }
 
-.main {
+.home {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   background-color: #252736;
-}
-
-.router-temp {
-  padding: 24px;
-  font-size: 22px;
-  color: $color-green;
 }

@@ -1,3 +1,17 @@
+.btn {
+  &.is-loading {
+    position: relative;
+    font-size: 0;
+    pointer-events: none;
+    cursor: none;
+
+    &::before {
+      content: 'Загрузка...';
+      font-size: 14px;
+    }
+  }
+}
+
 .favor-btn {
   position: absolute;
   right: 50px;
