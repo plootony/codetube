@@ -5,10 +5,6 @@
             <p class="auth__subtitle">Введите Ваши учетные данне</p>
             <form class="auth__form" action="#" method="POST">
                 <div class="auth__form-group">
-                    <label for="name" class="auth__label">Имя:</label>
-                    <input type="text" id="name" name="name" class="auth__input" required placeholder="Введите имя">
-                </div>
-                <div class="auth__form-group">
                     <label for="email" class="auth__label">Email:</label>
                     <input type="email" id="email" name="email" class="auth__input" required placeholder="Введите email">
                 </div>
@@ -17,7 +13,7 @@
                     <input type="password" id="password" name="password" class="auth__input" required
                         placeholder="Введите пароль">
                 </div>
-                <button type="submit" class="btn auth__submit">Зарегистрироваться</button>
+                <button type="submit" class="btn auth__submit">Авторизация</button>
             </form>
             <router-link class="auth__link" :to="{ name: 'register' }">Уже есть аккаунт?</router-link>
         </div>

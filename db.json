@@ -21,7 +21,6 @@
       "title": "Фотография"
     }
   ],
-
   "cards": [
     {
       "id": 1,
@@ -32,7 +31,11 @@
       "note": 22,
       "favor": true,
       "percent": 11,
-      "tags": [1, 2, 3],
+      "tags": [
+        1,
+        2,
+        3
+      ],
       "done": true,
       "deleted": false
     },
@@ -45,7 +48,11 @@
       "note": 223,
       "favor": false,
       "percent": 13,
-      "tags": [1, 2, 3],
+      "tags": [
+        1,
+        2,
+        3
+      ],
       "done": true,
       "deleted": false
     },
@@ -58,7 +65,11 @@
       "note": 223,
       "favor": false,
       "percent": 87,
-      "tags": [1, 2, 3],
+      "tags": [
+        1,
+        2,
+        3
+      ],
       "done": true,
       "deleted": false
     },
@@ -71,7 +82,11 @@
       "note": 223,
       "favor": false,
       "percent": 87,
-      "tags": [1, 2, 3],
+      "tags": [
+        1,
+        2,
+        3
+      ],
       "done": true,
       "deleted": false
     },
@@ -84,7 +99,11 @@
       "note": 18,
       "favor": false,
       "percent": 60,
-      "tags": [8, 9, 10],
+      "tags": [
+        8,
+        9,
+        10
+      ],
       "done": false,
       "deleted": false
     },
@@ -97,7 +116,10 @@
       "note": 15,
       "favor": true,
       "percent": 30,
-      "tags": [8, 10],
+      "tags": [
+        8,
+        10
+      ],
       "done": false,
       "deleted": false
     },
@@ -110,7 +132,10 @@
       "note": 50,
       "favor": true,
       "percent": 5,
-      "tags": [11, 12],
+      "tags": [
+        11,
+        12
+      ],
       "done": false,
       "deleted": false
     },
@@ -123,7 +148,10 @@
       "note": 40,
       "favor": false,
       "percent": 20,
-      "tags": [11, 13],
+      "tags": [
+        11,
+        13
+      ],
       "done": false,
       "deleted": false
     },
@@ -136,7 +164,10 @@
       "note": 12,
       "favor": true,
       "percent": 80,
-      "tags": [15, 16],
+      "tags": [
+        15,
+        16
+      ],
       "done": true,
       "deleted": false
     },
@@ -149,12 +180,14 @@
       "note": 30,
       "favor": false,
       "percent": 50,
-      "tags": [15, 17],
+      "tags": [
+        15,
+        17
+      ],
       "done": false,
       "deleted": false
     }
   ],
-
   "tags": [
     {
       "id": 1,
@@ -229,5 +262,30 @@
       "name": "Ретушь"
     }
   ],
-  "users": []
+  "users": [
+    {
+      "user": {
+        "email": "",
+        "username": "",
+        "password": ""
+      },
+      "id": 1
+    },
+    {
+      "user": {
+        "email": "ksan_der@mail.ru",
+        "username": "1",
+        "password": "1"
+      },
+      "id": 2
+    },
+    {
+      "user": {
+        "email": "",
+        "username": "",
+        "password": ""
+      },
+      "id": 3
+    }
+  ]
 }
